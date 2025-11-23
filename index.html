@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
   <link rel="stylesheet" href="style.css?v=1">
-  <title>Document</title>
+  <title>The Info Point</title>
 </head>
 <body>
   <div class="page1">
@@ -16,9 +16,9 @@
   <div class="navber">
     <ul>
       <li id="home">home</li>
-      <li id="videos">Videos</li>
+      <li id="videos"> <a href="#vi">Videos</a></li>
       <li id="shorts"> <a href="app1.html">Shorts</a></li>
-      <li id="about">About</li>
+      <li id="about"><a href="about.html">About</a></li>
       <li id="contact">Contact</li>
     </ul>
   </div>
@@ -32,7 +32,7 @@
         <a href="https://www.youtube.com/@TheInfoPoint-v8s?sub_confirmation=1" target="blank">subscribe</a>
       </div>
   </div>
-  <div class="videos-section">
+  <div class="videos-section" id="vi">
     <p>Latest Videos</p>
     <div class="videos">
       <div class="box1">1</div>
@@ -56,6 +56,19 @@
       </div>
     </div>
   </div>
+
+  <!-- SUBSCRIBE POPUP -->
+<div id="popup-backdrop" class="popup-backdrop">
+  <div class="popup-box">
+    <button id="popup-close" class="popup-close">&times;</button>
+    <h2>Subscribe করুন</h2>
+    <p>রহস্য, ভয় ও বিজ্ঞান—নতুন ভিডিও পেতে সাবস্ক্রাইব করুন।</p>
+
+    <a href="https://www.youtube.com/@TheInfoPoint-v8s?sub_confirmation=1" 
+       class="popup-btn" target="_blank">Subscribe Now</a>
+  </div>
+</div>
+
 </body>
 <script src="app.js"></script>
 </html>
