@@ -5,18 +5,25 @@
 }
 
 body {
-  padding-top: 100px;
-  background-color: black;
+    overflow-x: hidden;
+    background-color: black;
+   padding-top: 150px;
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px; /* তোমার header + navbar height অনুযায়ী */
+}
+
 
 .page1 {
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .text1 {
   height: 100px;
-  width: 100vw;
+  width: 100%;
   background: black;
   position: fixed;
   top: 0;
@@ -40,7 +47,7 @@ body {
 
 .navber {
   height: 50px;
-  width: 100vw;
+  width: 100%;
   border: 1px solid black;
   background: black; 
   display: flex;
@@ -65,11 +72,17 @@ body {
   cursor: pointer;
 }
 
+#shorts a
+{
+  text-decoration: none;
+  color: white;
+}
+
 .main-content
 {
 padding: 30px;
 height: 250px;
-width: 100vw;
+width: 100%;
 border: 1px solid black;
 color: white;
 background-color: black;
@@ -139,7 +152,7 @@ background-color: black;
 .videos-section .videos
 {
   height: 250px;
-  width: 100vw;
+  width: 100%;
   
   display: flex;
   justify-content: center;
@@ -156,7 +169,7 @@ background-color: black;
 .about
 {
   height: 100px;
-  width: 100vw;
+  width: 100%;
   background-color: black;
   margin-top: 20px;
 }
@@ -170,6 +183,7 @@ background-color: black;
   color: white;
 }
 
+
 .about-con p
 {
   display: flex;
@@ -179,4 +193,74 @@ background-color: black;
   font-weight: 200;
 }
 
+/* POPUP BACKDROP */
+.popup-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* POPUP BOX */
+.popup-box {
+  width: 90%;
+  max-width: 350px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  transform: scale(0.8);
+  opacity: 0;
+  transition: .25s ease;
+}
+
+.popup-box.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.popup-box h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.popup-box p {
+  font-size: 14px;
+  margin: 10px 0 18px;
+}
+
+.popup-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: red;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#about a
+{
+  text-decoration: none;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
